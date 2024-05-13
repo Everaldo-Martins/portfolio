@@ -9,7 +9,7 @@
    id="svg5"
    xml:space="preserve"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="dev.svg"
+   sodipodi:docname="dev2.svg"
    inkscape:export-filename="dev.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -66,7 +66,10 @@
          id="text2"
          aria-label="M"
          sodipodi:nodetypes="sccccsccsccccsccccccs" /></g><g
-       id="g3"><path
+       id="g3"
+       inkscape:export-filename=".\g3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><path
          style="fill:#dbdbdb;fill-opacity:1;stroke:none;stroke-width:0.627319;stroke-dasharray:none;stroke-opacity:1"
          d="m 69.271897,126.48391 c -1.352031,1.51753 -3.084923,2.73036 -5.998036,2.99903 l -44.42989,-0.22216 -0.111079,-20.99312 44.874194,0.11111 c 5.826867,0.59414 6.854808,4.35121 8.21953,7.88631 0.132269,12.99794 5.244822,19.0899 13.217899,21.21527 l 51.982955,-0.22216 c 4.13875,0.0234 4.05207,-7.85853 0,-7.8863 l -49.650384,0.22214 c -3.754711,-1.54863 -7.882387,-2.25809 -7.997389,-11.99606 -0.549667,-8.8492 -4.808881,-14.74979 -13.525316,-17.10745 L 14.095406,100.2549 c -1.972737,0.0887 -3.469008,1.96174 -3.298752,3.61291 l -0.471249,29.3746 c -0.09608,2.4819 0.825492,4.09828 4.241251,4.08416 l 51.209185,0.15707 c 3.822527,-0.43421 5.376846,-2.20264 7.540002,-3.61293 -1.500051,-1.35978 -2.956546,-3.03531 -4.043946,-7.3868 z"
          id="path4528-8"
@@ -82,7 +85,7 @@
          id="text5410-8"><tspan
            sodipodi:role="line"
            id="tspan5408-7"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.6537px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';letter-spacing:4.49792px;fill:#f0f0f0;stroke-width:0.627317;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.6537px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';letter-spacing:4.49792px;fill:#f0f0f0;fill-opacity:1;stroke-width:0.627317"
            x="204.68535"
            y="159.94656"
            dx="0">Everaldo Martins</tspan></text><path
