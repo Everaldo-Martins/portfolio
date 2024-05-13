@@ -1,74 +1,122 @@
-/* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Import fonts and Icons */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-/* Link */
-a, a:active, a:visited {
-    color: #192124;
-    cursor:pointer;
-    text-decoration:none;
-    outline:0;
-}
-a:hover {
-    color: #040506;
-    text-decoration:underline;
-    outline:0;
-}
-
-/* Body Style */
-body{
-    background: rgb(46, 46, 46);
-    font-family: 'Poppins', sans-serif;
+/* Page resets */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
     font-size: 100%;
-    font-weight: normal;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, main, hgroup, menu, nav, section {
+    display: block;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    outline: none;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+/* Page Stylesheet */
+body {
+    background-color: rgb(4, 18, 83);
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
-    color: #192124;
     display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 60px auto 60px;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-rows: 100px auto 40px;
 }
-
-header { 
-    padding: 20px 0 0 0;
-    display: flex;
-    justify-content: center;
-    grid-area: "header";
+header {
+    width: 100%;
+    grid-area: header; 
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;       
 }
-
-header section {
-    background-color: rgb(0, 128, 128);
-    width: calc(100% - 30px);
-    max-width: calc(1280px - 30px);
-    padding: 20px 10px 10px 10px;
-    border-top-left-radius: 0.6rem;
-    border-top-right-radius: 0.6rem;
+header .logo {
+    background: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 0 0.8rem;
+    background-size: contain;
+    margin: .8rem;
+    width: 200px;
+    height: 100px;
+    max-width: 200px;
 }
-
+header nav {    
+    width: auto;
+}
+header nav ul {
+    margin: 0.8rem 0;
+    list-style-type: none;
+}
+header nav li{
+    width: auto;
+    float: left;
+    margin: 1.2em .5em;
+    color: #dbdbdb;
+    font-size: 1rem;
+    line-height: 1;    
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+header nav li:hover, nav ul li.actived{
+    color: #f0f0f0;
+}
 main {
-    display: flex;
-    justify-content: center;
-    grid-area: "Main";
+    width: 100%;
+    grid-area: main;
 }
-
-main section {
-    background-color: rgb(0, 128, 128);
-    width: calc(100% - 30px);
-    max-width: calc(1280px - 30px);
-    padding: 20px 10px 10px 10px;
-}
-
 footer {
-    padding: 0 0 20px 0;
-    display: flex;
-    justify-content: center;
-    grid-area: "footer";
+    width: 100%;
+    grid-area: footer;
 }
-
-footer section {
-    background-color: rgb(0, 128, 128);
-    width: calc(100% - 30px);
-    max-width: calc(1280px - 30px);
-    border-bottom-left-radius: 0.6rem;
-    border-bottom-right-radius: 0.6rem;
-    padding: 10px 10px 20px 10px;
+footer p {
+    font-size: 0.9rem;
+    color: #f0f0f0;
     text-align: center;
 }
