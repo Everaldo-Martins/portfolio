@@ -8,9 +8,9 @@ const link = document.querySelector("link"),
 //Menu Active
 menu.forEach((m, i) => {
     m.onclick = () => { 
-        content.forEach((c) => {
-            c.removeAttribute("class", "active");
-        });
+        menu.forEach((c) => {c.removeAttribute("class", "active")});
+        m.setAttribute("class", "active");
+        content.forEach((c, i) => {c.removeAttribute("class", "active")});
         content[i].setAttribute("class", "active");
     }
 });

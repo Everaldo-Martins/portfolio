@@ -59,8 +59,7 @@ textarea:focus, input:focus, select:focus {
 
 /* Page Stylesheet */
 body {
-    background: rgb(4, 18, 83);
-    background: linear-gradient(0deg, rgb(0, 251, 255) 0%, rgb(40, 0, 101) 100%);
+    background: #280065;
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -78,7 +77,7 @@ header {
     justify-content: space-between;       
 }
 header .logo {
-    background: url(../img/logo.png);
+    background: url(../img/logo.svg);
     background-repeat: no-repeat;
     background-position: 0 0.8rem;
     background-size: contain;
@@ -96,8 +95,9 @@ header nav li{
     width: auto;
     float: left;
     margin: 1.2em .5em;
-    color: #dbdbdb;
-    font-size: 1rem;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+    font-weight: 300;
     line-height: 1;    
     padding: 0.8rem;
     text-align: center;
@@ -105,7 +105,10 @@ header nav li{
     cursor: pointer;
 }
 header nav li:hover, nav ul li.actived{
-    color: #f0f0f0;
+    color: #00fbff;
+}
+header nav .active {
+    color: #00fbff;
 }
 main {
     width: 100%;
@@ -117,11 +120,47 @@ main section {
     padding: 2rem; 
     display: none;  
     text-align: center; 
-    font-size: 80px; 
+    font-size: 100px; 
 }
 main .active{
     display: grid;  
-    grid-template-columns: auto;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+}
+main section article{
+    padding: 1rem;
+}
+main section article img{
+    width: 100%;
+    max-width: fit-content;
+}
+main section article h1 {
+    font-size: 58px;
+    color: #f0f0f0;
+    text-align: left;
+    margin: 1rem 0 0;
+}
+main section article h2 {
+    font-size: 42px;
+    color: #f0f0f0;
+    text-align: left;
+}
+main section article h3 {
+    font-size: 32px;
+    line-height: 58px;
+    color: #00fbff;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+main section article p{
+    font-size: 22px;
+    line-height: 28px;
+    color: #f0f0f0;
+    text-align: justify;
+}
+main section article span {
+    color: #00fbff;
 }
 footer {
     width: 100%;
@@ -129,6 +168,6 @@ footer {
 }
 footer p {
     font-size: 0.9rem;
-    color: #280065;
+    color: #f0f0f0;
     text-align: center;
 }
