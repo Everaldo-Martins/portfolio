@@ -45,11 +45,12 @@ footer, header, main, hgroup, menu, nav, section {
 }
 html, body{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     outline: none;
 }
 body {
     line-height: 1;
+    overflow-x: hidden;
 }
 ol, ul {
     list-style: none;
@@ -101,8 +102,7 @@ header .logo {
     max-width: 200px;
 }
 header nav {
-    width: 100%;
-    overflow: hidden;
+    width: auto;
 }
 
 header nav ul {
@@ -153,12 +153,12 @@ main section article img{
     max-width: fit-content;
 }
 main section article .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 40px;
+    padding: 8px;
+    font-size: 1rem;
+    width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 2px 1px;
+    margin: 0;
     border-radius: 8px;
     outline: none;
 }
@@ -168,14 +168,14 @@ main section article .fa:hover {
 }
 
 main section article .download {
-    width: 120px;
+    width: 100px;
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 1rem;
     font-style: normal;
     text-decoration: none;
-    padding: 12px 14px 10px 0;
+    padding: 8px 10px 8px 0;
     border-radius: 8px;
     outline: none;
     background: var(--sucess);
@@ -238,6 +238,7 @@ main section article p{
     line-height: 28px;
     color: var(--silver);
     text-align: justify;
+    margin: 0.6rem 0 0 0;
 }
 main section article span {
     font-weight: 600;
@@ -253,16 +254,16 @@ footer p {
     text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width:600px) {
     body {
         grid-template-areas: 'header' 'main' 'footer';
-        grid-template-rows: 140px auto 40px;
+        grid-template-rows: 165px auto 40px;
     }
     header {
         width: calc(100% - 0.4rem);
         padding: 0.6rem 0.2rem;
         grid-template-columns: none;
-        grid-template-rows: 100px 40px;
+        grid-template-rows: 100px 60px;
         justify-content: center;       
     }
     header .logo {
@@ -279,6 +280,7 @@ footer p {
 
     header nav li {
         margin: 0.5em;
+        padding: 1rem 0.8rem;
     }
     main section {
         width: calc(100% - 0.4rem);
@@ -289,5 +291,13 @@ footer p {
         display: grid;  
         grid-template-columns: 100%;
         justify-content: space-between;
+    }
+    main section article h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    main section article p{
+        font-size: 18px;
+        line-height: 24px;
     }
 }
