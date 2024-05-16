@@ -152,9 +152,12 @@ main section article img{
     width: 100%;
     max-width: fit-content;
 }
+main section article .user{ 
+    max-height: calc(100vh - 200px);
+}
 main section article .fa {
     padding: 8px;
-    font-size: 1rem;
+    font-size: 1vw;
     width: 30px;
     text-align: center;
     text-decoration: none;
@@ -172,7 +175,7 @@ main section article .download {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1vw;
     font-style: normal;
     text-decoration: none;
     padding: 8px 10px 8px 0;
@@ -208,34 +211,34 @@ main section article .fa-github {
 }
 
 main section article h1 {
-    font-size: 58px;
-    line-height: 62px;
+    font-size: 4vw;
+    line-height: 4.2vw;
     color: var(--silver);
     text-align: left;
     margin: 1rem 0 0;
 }
 main section article h2 {
-    font-size: 42px;
+    font-size: 3vw;
     color: var(--silver);
     text-align: left;
 }
 main section article h3 {
-    font-size: 32px;
-    line-height: 58px;
+    font-size: 2vw;
+    line-height: 2.2;
     color: var(--silver);
     text-align: left;
     text-transform: capitalize;
 }
 main section article hr{
-    font-size: 1rem;
+    font-size: 0.2vw;
     color: var(--silver);
     border: none;
     margin: 1.4rem 0;
     padding: 0.1rem 0;
 }
 main section article p{
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 1.2vw;
+    line-height: 1.4vw;
     color: var(--silver);
     text-align: justify;
     margin: 0.6rem 0 0 0;
@@ -292,12 +295,19 @@ footer p {
         grid-template-columns: 100%;
         justify-content: space-between;
     }
+    main section article .fa {        
+        font-size: 5vw;
+    }
+    main section article .download {
+        font-size: 5vw;
+        display: inline;
+    }
     main section article h1 {
-        font-size: 42px;
-        line-height: 52px;
+        font-size: 10vw;
+        line-height: 10.2vw;
     }
     main section article p{
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 5vw;
+        line-height: 5.2vw;
     }
 }
