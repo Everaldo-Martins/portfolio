@@ -259,7 +259,6 @@ footer p {
 
 @media (max-width:600px) {
     body {
-        grid-template-areas: 'header' 'main' 'footer';
         grid-template-rows: 165px auto 40px;
     }
     header {
