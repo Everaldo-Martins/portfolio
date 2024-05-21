@@ -8,11 +8,6 @@
     --cyan: #00fbff;
     --blue: #280065;
 
-    --envelope: #c81700;
-    --linkedin: #0a66c2;
-    --instagram: #5b51d8;
-    --github: #2c4762;
-
     --erro: #ff0000;
     --sucess: #008800;
 }
@@ -155,61 +150,62 @@ main section article img{
 main section article .user{ 
     max-height: calc(100vh - 200px);
 }
+main section article div {
+    width: calc(100% - 1.6rem);
+    display: flex;
+    padding:2.5rem 0 0.8rem 0;
+    justify-content: left;
+}
 main section article .fa {
-    padding: 8px;
-    font-size: 1vw;
-    width: 30px;
+    background-color: var(--silver);
+    width: 25px;
+    font-size: 1.2vw;
+    padding: 0.5rem;
+    color: var(--blue);
     text-align: center;
     text-decoration: none;
-    margin: 0;
-    border-radius: 8px;
+    margin: 0 1rem 0 0;
     outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--silver);
+    border-radius: 0.2rem;
+    position: relative;
+    transition: all 0.2s ease 0.1s;
+    z-index: 0;
 }
-
-main section article .fa:hover {
-    opacity: 0.7;
-}
-
-main section article .download {
-    width: 100px;
+main section article .fa .tooltip {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 1vw;
     font-style: normal;
-    text-decoration: none;
-    padding: 8px 10px 8px 0;
-    border-radius: 8px;
-    outline: none;
-    background: var(--sucess);
-    color: var(--silver);
+    font-size: 0.8rem;
+    visibility: hidden;
+    background-color: var(--silver);
+    color: var(--blue);
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5rem 0.3rem 0.3rem 0.3rem;
+    position: absolute;
+    width: 100px;
+    bottom: 120%;
+    left: 50%;
+    margin:0 0 0 -50px;
+    z-index: 1;
+} 
+main section article .fa .tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--silver) transparent transparent transparent;
+  } 
+main section article .fa:hover .tooltip {
+    visibility: visible;
 }
-
-main section article .fa-file-pdf-o {
-    padding: 10px 0 10px 10px;
-    color: var(--silver);
-}
-
-main section article .fa-envelope {
-    background: var(--envelope);
-    color: var(--silver);
-}
-
-main section article .fa-linkedin {
-    background: var(--linkedin);
-    color: var(--silver);
-}
-
-main section article .fa-instagram {
-    background: var(--instagram);
-    color: var(--silver);
-}
-
-main section article .fa-github {
-    background: var(--github);
-    color: var(--silver);
-}
-
 main section article h1 {
     font-size: 4vw;
     line-height: 4.2vw;
@@ -229,15 +225,8 @@ main section article h3 {
     text-align: left;
     text-transform: capitalize;
 }
-main section article hr{
-    font-size: 0.2vw;
-    color: var(--silver);
-    border: none;
-    margin: 1.4rem 0;
-    padding: 0.1rem 0;
-}
 main section article p{
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     line-height: 1.4vw;
     color: var(--silver);
     text-align: justify;
