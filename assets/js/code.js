@@ -1,10 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    window.addEventListener("scroll", function() {
+
+    window.addEventListener("scroll", function() {  
         let sticky = document.querySelector('.navbar'),
-            scroll_up = document.querySelector('.scroll-up-btn');
+        scroll_up = document.querySelector('.scroll-up');      
         this.scrollY > 20 ? sticky.classList.add("sticky") : sticky.classList.remove("sticky"); 
         this.scrollY > 500 ? scroll_up.classList.add("show") : scroll_up.classList.remove("show");
-    });
+
+        scroll_up.onclick = () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    });        
 
     document.querySelector('.menu-btn').onclick = () => {
         let menu = document.querySelector('.menu');
