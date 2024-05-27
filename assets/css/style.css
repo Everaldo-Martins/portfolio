@@ -930,9 +930,13 @@ footer .copy {
         background-position: center 0;
     }
 
+    .home .max-width {
+        padding: 100px 15px 0 15px;
+    }
+
     .home .home-content .text-1 {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .home .home-content .text-2 {
