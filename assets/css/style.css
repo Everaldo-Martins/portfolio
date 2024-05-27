@@ -366,6 +366,9 @@ section .title::after {
 
 .about .about-content .right p {
     text-align: justify;
+    line-height: 125%;
+    text-wrap: wrap;
+    margin: 0 0 10px 0;
 }
 
 .about .about-content .right a {
