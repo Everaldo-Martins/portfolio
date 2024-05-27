@@ -704,7 +704,8 @@ footer .copy {
         width: 100%;
         left: -100%;
         top: 0;
-        background: var(--lowblack);
+        background: var(--lowblack_trnsparent);
+        backdrop-filter: blur(1rem);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -761,10 +762,7 @@ footer .copy {
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
-    }
-    .home {
-        background: url('../images/banner-mobile.jpg') no-repeat center;
-    }
+    }    
     .home .home-content .text-2{
         font-size: 60px;
     }
@@ -783,6 +781,14 @@ footer .copy {
 }
 
 @media (max-width: 500px) {
+    .home {
+        background: url('../images/banner-mobile.jpg') no-repeat center;
+        background-position: center 0;
+    }
+    .home .home-content .text-1{
+        font-size: 18px;
+        line-height: 22px;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
