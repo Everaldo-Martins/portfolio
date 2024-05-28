@@ -1,6 +1,6 @@
 /* Import fonts and Icons */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 /* Resete */
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, 
@@ -66,11 +66,11 @@ table {
     --sucess: #008000;
 
     /* Opacity colors */
-    --black_trnsparent: rgba(17, 17, 17, 0.8);
-    --lowblack_trnsparent: rgba(34, 34, 34, 0.8);
-    --minblack_trnsparent: rgba(37, 37, 37, 0.8);
-    --silver_trnsparent: rgba(240, 240, 240, 0.8);
-    --orange_trnsparent: rgba(255, 85, 0, 0.8);
+    --black_opacity: rgba(17, 17, 17, 0.8);
+    --lowblack_opacity: rgba(34, 34, 34, 0.8);
+    --minblack_opacity: rgba(37, 37, 37, 0.8);
+    --silver_opacity: rgba(240, 240, 240, 0.8);
+    --orange_opacity: rgba(255, 85, 0, 0.8);
 }
 
 html {
@@ -176,7 +176,7 @@ section .title::after {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: var(--lowblack_trnsparent);
+    background: var(--lowblack_opacity);
     backdrop-filter: blur(1rem);
 }
 
@@ -332,6 +332,80 @@ section .title::after {
 .home .home-content a:hover {
     color: var(--orange);
     background: none;
+}
+
+/* social section styling */
+.social {
+    width: 35px;
+    height: 190px;
+    padding: 0;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 38%;
+    z-index: 99;
+}
+
+.social .fa,
+.social .fab {
+    background-color: var(--minblack);
+    width: 25px;
+    font-size: 1.2vw;
+    padding: 0.5rem;
+    color: var(--orange);
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0 1rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 4px var(--minblack_opacity);
+    position: relative;
+    float: left;
+    transition: all 0.2s ease 0.1s;
+}
+
+.social .fa:last-child,
+.social .fab:last-child {
+    margin: 0 0 0 1rem;
+}
+
+.social .fa .tooltip,
+.social .fab .tooltip {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    visibility: hidden;
+    background-color: var(--silver);
+    color: var(--blue);
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5rem 0.3rem 0.3rem 0.3rem;
+    position: absolute;
+    width: 100px;
+    top: 5px;
+    left: 115%;
+    transition: all 0.2s ease 0.1s;
+}
+
+.social .fa .tooltip::after, 
+.social .fab .tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -4px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--silver) transparent transparent;
+}
+
+.social .fa:hover .tooltip,
+.social .fab:hover .tooltip { 
+    color: var(--minblack);   
+    visibility: visible;
 }
 
 /* about section styling */
@@ -567,7 +641,7 @@ section .title::after {
     line-height: 50px;
     background: var(--orange);
     border-radius: 50%;
-    box-shadow: 0 3px 6px var(--black_trnsparent);
+    box-shadow: 0 3px 6px var(--black_opacity);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
 }
@@ -833,7 +907,7 @@ footer .copy {
         width: 100%;
         left: -100%;
         top: 0;
-        background: var(--lowblack_trnsparent);
+        background: var(--lowblack_opacity);
         backdrop-filter: blur(1rem);
         text-align: center;
         padding-top: 80px;
