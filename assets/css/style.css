@@ -271,14 +271,16 @@ section .title::after {
 }
 
 /* home section styling */
-.home {
-    display: flex;
-    background: var(--black) url("../images/banner.jpg") no-repeat center;
-    height: 100vh;
-    color: var(--silver);
-    min-height: 500px;
+.home {    
+    background: var(--black) url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;    
+    color: var(--silver);
+    display: flex;
+    height: 100vh;
+    min-height: 500px;    
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -350,7 +352,7 @@ section .title::after {
 .social .fab {
     background-color: var(--minblack);
     width: 25px;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     padding: 0.5rem;
     color: var(--orange);
     text-align: center;
@@ -941,6 +943,10 @@ footer .copy {
         padding: 10px 30px;
     }
 
+    .social {
+        top: 25%;
+    }
+
     .max-width {
         max-width: 930px;
     }
@@ -992,6 +998,10 @@ footer .copy {
         font-size: 20px;
     }
 
+    .social {
+        top: 22%;
+    }
+
     .services .serv-content .card {
         width: 100%;
     }
@@ -1022,6 +1032,11 @@ footer .copy {
 
     .home .home-content .text-3 {
         font-size: 27px;
+    }
+
+    .social {
+        position: absolute;
+        top: 22%;
     }
 
     .about .about-content .right .text,
