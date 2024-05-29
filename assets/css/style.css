@@ -919,16 +919,7 @@ footer .copy {
     }
 }
 
-@media (max-width: 947px) {
-    .menu-btn {
-        display: block;
-        z-index: 999;
-    }
-
-    .active+.menu-btn:before {
-        content: "\f00d";
-    }
-
+@media (max-width: 947px) {  
     .navbar .menu {
         position: fixed;
         height: 100vh;
@@ -1008,6 +999,15 @@ footer .copy {
 }
 
 @media (max-width: 690px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .active+.menu-btn:before {
+        content: "\f00d";
+    }
+    
     .max-width {
         padding: 0 23px;
     }
