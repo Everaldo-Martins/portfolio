@@ -51,11 +51,5 @@ A estrutura de diretórios do projeto é a seguinte:
    ```
 3. **Abra o arquivo `index.html` no seu navegador preferido.**
 
-## Contatos
-- **Email:** [everaldoinfortecnico@gmail.com](mailto:everaldoinfortecnico@gmail.com)
-- **LinkedIn:** [Everaldo Martins](https://www.linkedin.com/in/everaldo-martins-de-oliveira-214400b3/)
-- **Instagram:** [everaldo_martins1](https://www.instagram.com/everaldo_martins1/)
-- **GitHub:** [Everaldo-Martins](https://github.com/Everaldo-Martins)
-
 ## Licença
 Este projeto está licenciado sob a [MIT License](LICENSE).
