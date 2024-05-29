@@ -51,5 +51,8 @@ A estrutura de diretórios do projeto é a seguinte:
    ```
 3. **Abra o arquivo `index.html` no seu navegador preferido.**
 
+## Teste o projeto
+[Projeto]('https://everaldo-martins.github.io/portfolio/')
+
 ## Licença
 Este projeto está licenciado sob a [MIT License](LICENSE).
