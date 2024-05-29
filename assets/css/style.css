@@ -231,10 +231,11 @@ section .title::after {
 /* menu btn styling */
 .menu-btn {
     color: var(--silver);
-    margin: -8px 10px auto auto;
-    font-size: 23px;
+    padding: auto 10px auto auto;
+    font-size: 26px;
     cursor: pointer;
     display: none;
+    transition: all 0.3s ease;
 }
 
 .scroll-up {
@@ -1014,7 +1015,8 @@ footer .copy {
         z-index: 999;
     }
 
-    .active+.menu-btn:before {
+    .active + .menu-btn:before {
+        color: var(--orange);
         content: "\f00d";
     }
 
