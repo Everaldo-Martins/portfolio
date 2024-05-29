@@ -115,3 +115,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelector('.copy').innerHTML = 'EDM - Dev Everaldo Martins <span class="far fa-copyright"></span> ' + new Date().getFullYear() + ' - Todos os direitos reservados.';
 });
+
+var form = document.querySelector("form");  
+async function handleSubmit(event) {
+event.preventDefault();
+var status = document.querySelector(".my-form-status");
+var data = new FormData(event.target);
+fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+}).then(response => {
+    if (response.ok) {
+        status.innerHTML = "<p class=\"sucess\">Mensagem enviada! Obrigado por entrar em contato.</p>";
+        form.reset();
+    } 
+    else {
+        response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+            } else {
+            status.innerHTML = "<p class=\"erro\">Oops! Ocorreu um problema ao enviar seu formulário.</p>";
+            }
+        })
+    }
+}).catch(error => {
+    status.innerHTML = "<p class=\"erro\">Oops! Ocorreu um problema ao enviar seu formulário.</p>";
+});
+}
+form.addEventListener("submit", handleSubmit);

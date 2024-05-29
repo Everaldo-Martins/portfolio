@@ -746,12 +746,13 @@ section .title::after {
 .contact .contact-content .column {
     width: calc(50% - 40px);
     padding: 20px;
+    position: relative;
 }
 
 .contact .contact-content .text {
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .contact .contact-content .left p {
@@ -860,6 +861,30 @@ section .title::after {
 .right form .button-area button:hover {
     color: var(--orange);
     background: none;
+}
+
+.right .my-form-status {    
+    width: max-content;
+    height: auto; 
+    padding: 10px;   
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+}
+
+.right .my-form-status .erro { 
+    color: var(--erro);
+    text-align: justify;
+    text-wrap: wrap;
+    font-size: 0.7rem;
+}
+
+.right .my-form-status .sucess { 
+    color: var(--sucess);
+    text-align: justify;
+    text-wrap: wrap;
+    font-size: 0.7rem;
 }
 
 /* footer section styling */
