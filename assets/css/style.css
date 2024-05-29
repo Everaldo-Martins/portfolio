@@ -388,7 +388,7 @@ section .title::after {
     position: absolute;
     width: max-content;
     top: 0;
-    left: 118%;
+    left: 120%;
     transition: all 0.2s ease 0.1s;
 }
 
@@ -1062,6 +1062,11 @@ footer .copy {
     .social {
         position: absolute;
         top: 22%;
+    }
+
+    .social .fa:hover .tooltip,
+    .social .fab:hover .tooltip {
+        visibility: hidden;
     }
 
     .about .about-content .right .text,
