@@ -386,7 +386,7 @@ section .title::after {
     border-radius: 6px;
     padding: 0.5rem 0.3rem 0.3rem 0.3rem;
     position: absolute;
-    width: 100px;
+    width: max-content;
     top: 5px;
     left: 115%;
     transition: all 0.2s ease 0.1s;
@@ -405,7 +405,8 @@ section .title::after {
 }
 
 .social .fa:hover .tooltip,
-.social .fab:hover .tooltip { 
+.social .fab:hover .tooltip {
+    color: var(--orange);
     visibility: visible;
 }
 
