@@ -406,7 +406,6 @@ section .title::after {
 
 .social .fa:hover .tooltip,
 .social .fab:hover .tooltip { 
-    color: var(--minblack);   
     visibility: visible;
 }
 
