@@ -41,6 +41,7 @@ A estrutura de diretórios do projeto é a seguinte:
 - Formspree (para o formulário de contato)
 
 ## Instalação e Uso
+
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/Everaldo-Martins/portifolio.git
@@ -52,7 +53,7 @@ A estrutura de diretórios do projeto é a seguinte:
 3. **Abra o arquivo `index.html` no seu navegador preferido.**
 
 ## Teste o projeto
-[Projeto]('https://everaldo-martins.github.io/portfolio/')
+- [Projeto](https://everaldo-martins.github.io/portfolio/)
 
 ## Licença
 Este projeto está licenciado sob a [MIT License](LICENSE).
