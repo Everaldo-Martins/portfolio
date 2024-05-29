@@ -229,7 +229,7 @@ section .title::after {
 
 /* menu btn styling */
 .menu-btn {
-    color: var(--lowblack);
+    color: var(--silver);
     margin-top: -8px;
     font-size: 23px;
     cursor: pointer;
@@ -1007,7 +1007,7 @@ footer .copy {
     .active+.menu-btn:before {
         content: "\f00d";
     }
-    
+
     .max-width {
         padding: 0 23px;
     }
