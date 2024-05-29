@@ -114,6 +114,7 @@ section {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    overflow: hidden;
 }
 
 .about .about-content,
@@ -753,11 +754,15 @@ section .title::after {
 .contact .contact-content .text {
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contact .contact-content .left p {
+    width: 100%;
+    padding: 0;
+    text-wrap: wrap;
     text-align: justify;
+    font-size: 16px;
 }
 
 .contact .contact-content .left .icons {
@@ -771,7 +776,7 @@ section .title::after {
 }
 
 .contact .contact-content .row .info {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .contact .contact-content .row i {
@@ -989,8 +994,13 @@ footer .copy {
 
     .skills .skills-content .column,
     .contact .contact-content .column {
-        width: 100%;
-        margin-bottom: 35px;
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+
+    .contact .contact-content .info .sub-title {
+        font-size: 14px;
+        color: var(--lowblack);
     }
 
     .teams .wrapper .carousel {
