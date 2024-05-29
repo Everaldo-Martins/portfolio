@@ -229,7 +229,8 @@ section .title::after {
 
 /* menu btn styling */
 .menu-btn {
-    color: var(--silver);
+    color: var(--lowblack);
+    margin-top: -8px;
     font-size: 23px;
     cursor: pointer;
     display: none;
