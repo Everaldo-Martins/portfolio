@@ -1,58 +1,49 @@
 EVERALDO MARTINS DE OLIVEIRA
 
-Informações Pessoais
+Informações Pessoais:
 
-Email:  
-everaldoinfortecnico@gmail.com
+Email:  everaldoinfortecnico@gmail.com
+Celular:  (83) 9-9115-8460
+Nacionalidade:  Brasileira
+Gênero:  Masculino
+Estado Civil:  Solteiro
+Endereço:  Rua Quatro de Outubro, Santa Luzia, Paraíba.
+CEP:  58600-000
 
-Celular:  
-(83) 9-9115-8460
+Objetivo:
 
-Nacionalidade:  
-Brasileira
+Como um profissional versátil com experiência em HTML, CSS, JavaScript, Node, Flutter, PHP, C, Java e Python, meu objetivo é contribuir para projetos inovadores que combinam design intuitivo com funcionalidades robustas. Busco aplicar minhas habilidades em desenvolvimento web e mobile, criação de interfaces atraentes e manutenção de sistemas eficientes para oferecer soluções tecnológicas de alta qualidade. Estou comprometido com a melhoria contínua e a excelência, sempre atualizado com as últimas tendências e melhores práticas do setor, e disposto a enfrentar novos desafios que exijam criatividade e conhecimento técnico aprofundado.
 
-Genero:  
-Masculino
+Formação Acadêmica:
 
-Estado Civil:  
-Solteiro
+Curso: Técnico em Informática  
+Instituto: Instituto Federal da Paraíba  
+Conclusão: 2022
 
-Endereço:  
-Rua Quatro de Outubro, Santa Luzia, Paraíba.
+Curso: Ciência da Computação  
+Instituição: Universidade Estadual da Paraíba
 
-CEP:  
-58600-000
+Qualificações e Cursos Complementares
+- Ampla experiência com manutenção de hardwares e redes.
+- Experiência com desenvolvimento de Aplicativos Mobile e Web.
 
-Objetivo
-Como um profissional versátil com experi�ncia em HTML, CSS, JavaScript, Node, Flutter, PHP, C, Java e Python, meu objetivo � contribuir para projetos inovadores que combinam design intuitivo com funcionalidades robustas. Busco aplicar minhas habilidades em desenvolvimento web e mobile, cria��o de interfaces atraentes e manuten��o de sistemas eficientes para oferecer solu��es tecnol�gicas de alta qualidade. Estou comprometido com a melhoria cont�nua e a excel�ncia, sempre atualizado com as �ltimas tend�ncias e melhores pr�ticas do setor, e disposto a enfrentar novos desafios que exijam criatividade e conhecimento t�cnico aprofundado.
+Experiência:
 
-Forma��o Acad�mica
-
-Curso: T�cnico em Inform�tica  
-Institui��o: Instituto Federal da Para�ba  
-Conclus�o: 2022
-
-Curso: Ci�ncia da Computa��o  
-Institui��o: Universidade Estadual da Para�ba
-
-Qualifica��es e Cursos Complementares
-- Ampla experi�ncia com manuten��o de hardwares e redes.
-- Experi�ncia com desenvolvimento de Aplicativos Mobile e Web.
-
-Experi�ncia
-Cargo: Representante T�cnico  
+Cargo: Representante Técnico  
 Empresa: Prefeitura Municipal de Santa Luzia  
-Per�odo: 2009 - Presente  
+Período: 2009 - Presente  
 
-Fun��es:
-- Configura��o e manuten��o de computadores e redes.
-- Diagn�stico e resolu��o de problemas t�cnicos.
-- Atualiza��es de software e hardware.
-- Suporte t�cnico.
-- Garantia da seguran�a e integridade dos sistemas.
-- Membro da comiss�o de licita��es, participando do processo de sele��o de fornecedores para aquisi��o de bens e/ou servi�os.
+Funções:
 
-Informa��es Adicionais
+- Configuração e manutenção de computadores e redes.
+- Diagnóstico e resolução de problemas técnicos.
+- Atualizações de software e hardware.
+- Suporte técnico.
+- Garantia da segurança e integridade dos sistemas.
+- Membro da comissão de licitações, participando do processo de seleção de fornecedores para aquisição de bens e/ou serviços.
+
+Informações Adicionais:
+
 Caso haja necessidade: 
 - Disponibilidade para viagens.
 - Disponibilidade para mudar de estado ou cidade.
