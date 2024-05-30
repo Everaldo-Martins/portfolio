@@ -114,6 +114,7 @@ section {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    overflow: hidden;
 }
 
 .about .about-content,
@@ -230,9 +231,11 @@ section .title::after {
 /* menu btn styling */
 .menu-btn {
     color: var(--silver);
-    font-size: 23px;
+    padding: auto 10px auto auto;
+    font-size: 26px;
     cursor: pointer;
     display: none;
+    transition: all 0.3s ease;
 }
 
 .scroll-up {
@@ -752,11 +755,15 @@ section .title::after {
 .contact .contact-content .text {
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contact .contact-content .left p {
+    width: 100%;
+    padding: 0;
+    text-wrap: wrap;
     text-align: justify;
+    font-size: 16px;
 }
 
 .contact .contact-content .left .icons {
@@ -770,7 +777,7 @@ section .title::after {
 }
 
 .contact .contact-content .row .info {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .contact .contact-content .row i {
@@ -919,40 +926,13 @@ footer .copy {
 }
 
 @media (max-width: 947px) {
-    .menu-btn {
-        display: block;
-        z-index: 999;
-    }
-
-    .active+.menu-btn:before {
-        content: "\f00d";
-    }
-
-    .navbar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: var(--lowblack_opacity);
-        backdrop-filter: blur(1rem);
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-
-    .navbar .menu.active {
-        left: 0;
-    }
-
-    .navbar .menu li {
-        display: block;
-    }
-
     .navbar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
+        display: block;
+        color: var(--silver);
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0 0 0 12px;
+        transition: color 0.3s ease;
     }
 
     .home .home-content .text-2 {
@@ -997,8 +977,13 @@ footer .copy {
 
     .skills .skills-content .column,
     .contact .contact-content .column {
-        width: 100%;
-        margin-bottom: 35px;
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+
+    .contact .contact-content .info .sub-title {
+        font-size: 14px;
+        color: var(--lowblack);
     }
 
     .teams .wrapper .carousel {
@@ -1007,6 +992,43 @@ footer .copy {
 }
 
 @media (max-width: 690px) {
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: var(--lowblack_opacity);
+        backdrop-filter: blur(1rem);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }   
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .active + .menu-btn:before {
+        color: var(--orange);
+        content: "\f00d";
+    }
+
     .max-width {
         padding: 0 23px;
     }
