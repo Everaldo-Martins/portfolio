@@ -5,7 +5,7 @@
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instalação e Uso](#instalação-e-uso)
-- [Contatos](#contatos)
+- [Teste o Projeto](#teste-o-projeto)
 - [Licença](#licença)
 
 ## Descrição

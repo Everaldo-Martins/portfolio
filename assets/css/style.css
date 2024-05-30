@@ -991,6 +991,13 @@ footer .copy {
     }
 }
 
+@media (max-width: 840px) {
+    .home {
+        background: var(--lowblack) url('../images/medium_banner.jpg') no-repeat center;
+        background-position: center;
+    }
+}
+
 @media (max-width: 690px) {
     .navbar .menu {
         position: fixed;
@@ -1060,7 +1067,7 @@ footer .copy {
 
 @media (max-width: 500px) {
     .home {
-        background: url('../images/banner-mobile.jpg') no-repeat center;
+        background: var(--lowblack) url('../images/banner-mobile.jpg') no-repeat center;
         background-position: center 0;
     }
 
@@ -1070,7 +1077,7 @@ footer .copy {
 
     .home .home-content .text-1 {
         font-size: 20px;
-        line-height: 24px;
+        margin: 0 0 8px 0;
     }
 
     .home .home-content .text-2 {
@@ -1078,7 +1085,7 @@ footer .copy {
     }
 
     .home .home-content .text-3 {
-        font-size: 27px;
+        font-size: 22px;
     }
 
     .social {
