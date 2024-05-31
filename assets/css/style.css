@@ -277,7 +277,7 @@ section .title::after {
 .home {    
     background: var(--black) url("../images/banner.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;    
     color: var(--silver);
@@ -993,7 +993,8 @@ footer .copy {
 
 @media (max-width: 840px) {
     .home {
-        background: var(--lowblack) url('../images/medium_banner.jpg') no-repeat center;
+        background: var(--lowblack) url('../images/medium_banner.jpg');
+        background-repeat: no-repeat;
         background-position: center;
     }
 }
@@ -1067,7 +1068,8 @@ footer .copy {
 
 @media (max-width: 500px) {
     .home {
-        background: var(--lowblack) url('../images/banner-mobile.jpg') no-repeat center;
+        background: var(--lowblack) url('../images/banner-mobile.jpg');
+        background-repeat: no-repeat;
         background-position: center 0;
     }
 
