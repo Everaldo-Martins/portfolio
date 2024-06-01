@@ -79,23 +79,24 @@ html {
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--silver);
+    background: var(--minblack);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--lowblack);
+    border-radius: 5px;
+    background: var(--orange);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--lowblack);
+    background: var(--orange_opacity);
 }
 
 body {
-    background-color: var(--silver);
+    background-color: var(--silver_opacity);
 }
 
 /* all similar content styling codes */
@@ -277,9 +278,10 @@ section .title::after {
 .home {    
     background: var(--black) url("../images/banner.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
-    background-attachment: fixed;    
+    background-attachment: fixed; 
+    background-origin: border-box;   
     color: var(--silver);
     display: flex;
     height: 100vh;
@@ -1061,8 +1063,9 @@ footer .copy {
 @media (max-width: 500px) {
     .home {
         background: var(--lowblack) url('../images/banner-mobile.jpg');
-        background-repeat: no-repeat;
-        background-position: center 0;
+        background-repeat: no-repeat;        
+        background-position: right;
+        background-size: contain;
     }
 
     .home .max-width {
