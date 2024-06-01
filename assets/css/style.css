@@ -1065,7 +1065,7 @@ footer .copy {
         background: var(--lowblack) url('../images/banner-mobile.jpg');
         background-repeat: no-repeat;        
         background-position: right;
-        background-size: contain;
+        background-size: cover;
     }
 
     .home .max-width {
