@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         menu.classList.contains("active") ? menu.classList.remove("active") : menu.classList.add("active");
     }
 
-    var texts = ["Estudante", "Web Designer", "Desenvolvedor", "TI"],
+    var texts = ["Estudante", "Web Designer", "Desenvolvedor", "Técnico em Informática"],
         speed = 200,
         currentIndex = 0,
         charIndex = 0,
