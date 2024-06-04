@@ -77,6 +77,12 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    scrollbar-color: var(--orange) var(--minblack);
+    scrollbar-gutter: 5px;
+    scrollbar-width: thin;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 5px;
@@ -96,10 +102,7 @@ html {
 }
 
 body {
-    background-color: var(--silver_opacity);
-    scrollbar-color: var(--orange) var(--minblack);
-    scrollbar-gutter: 5px;
-    scrollbar-width: thin;
+    background-color: var(--silver_opacity);    
 }
 
 /* all similar content styling codes */
