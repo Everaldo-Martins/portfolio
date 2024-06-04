@@ -26,7 +26,10 @@ hgroup, menu, nav, section {
 html,
 body {
     min-height: 100vh;
-    line-height: 1
+    line-height: 1;
+    scrollbar-color: #ff5400 #252525;
+    scrollbar-gutter: 5px;
+    scrollbar-width: thin;
 }
 
 ol,
